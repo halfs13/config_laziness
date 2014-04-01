@@ -1,0 +1,21 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Sunburst 2.tmTheme",
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"match_brackets_angle": true,
+	"rulers":
+	[
+		80,
+		120,
+		140
+	],
+	"shift_tab_unindent": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true
+}
