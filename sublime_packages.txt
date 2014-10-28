@@ -1,0 +1,8 @@
+javascript and node snippets
+javatar
+prettyJson
+sidebar enhancements
+sublimecodeintel
+sublime-linter
+sublime-linter jscs
+sublime-linter jshint

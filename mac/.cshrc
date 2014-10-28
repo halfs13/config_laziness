@@ -1,4 +1,4 @@
-set path=( $path /Users/halfs13/bin )
+set path=( /usr/local/bin $path /Users/halfs13/bin )
 
 set prompt="[%c3][%h]%# "
 
@@ -16,7 +16,8 @@ alias cp "cp -v"
 alias mv "mv -v"
 alias cpr "cp -rv"
 
-setenv JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home
+setenv JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_72.jdk/Contents/Home
+setenv  JAVA_OPTS "-Xmx1024m -Xms512m -XX:PermSize=128m -XX:MaxPermSize=256m"
 
 switch ($TERM)
     case "xterm*":
