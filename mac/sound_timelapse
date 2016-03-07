@@ -1,0 +1,1 @@
+mencoder filename.avi -o screenlapse.avi -ovc copy -oac mp3lame -audiofile audiofilename

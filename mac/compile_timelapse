@@ -1,0 +1,1 @@
+mencoder -ovc x264 -oac mp3lame -audiofile basket_case.mp3 -mf w=1400:h=900:fps=20:type=jpg 'mf://@files.txt' -o screenlapse.avi
