@@ -1,0 +1,10 @@
+[user]
+	name = halfs13
+	email = halfs13@gmail.com
+[alias]
+	s = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	fulllog = !git --no-pager log -1 --stat --pretty=fuller
+	chdate = "!shift && env GIT_COMMITTER_DATE=\"$1\" git commit --amend --date \"$1\" --no-edit"
+[push]
+	default = simple
