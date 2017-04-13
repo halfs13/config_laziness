@@ -1,12 +1,9 @@
 {
-    // JSHint Default Configuration File (as on JSHint website)
-    // See http://jshint.com/docs/ for more details
-
-    "maxerr"        : 50,       // {int} Maximum error before stopping
+    "maxerr"        : 100,       // {int} Maximum error before stopping
 
     // Enforcing
-    "bitwise"       : true,     // true: Prohibit bitwise operators (&, |, ^, etc.)
-    "camelcase"     : false,    // true: Identifiers must be in camelCase
+    "bitwise"       : false,     // true: Prohibit bitwise operators (&, |, ^, etc.)
+    "camelcase"     : true,    // true: Identifiers must be in camelCase
     "curly"         : true,     // true: Require {} for every new block or scope
     "eqeqeq"        : true,     // true: Require triple equals (===) for comparison
     "freeze"        : true,     // true: prohibits overwriting prototypes of native objects such as Array, Date etc.
@@ -39,14 +36,14 @@
     "boss"          : false,     // true: Tolerate assignments where comparisons would be expected
     "debug"         : false,     // true: Allow debugger statements e.g. browser breakpoints.
     "eqnull"        : false,     // true: Tolerate use of `== null`
-    "es5"           : false,     // true: Allow ES5 syntax (ex: getters and setters)
-    "esnext"        : false,     // true: Allow ES.next (ES6) syntax (ex: `const`)
+    "es5"           : true,     // true: Allow ES5 syntax (ex: getters and setters)
+    "esnext"        : true,     // true: Allow ES.next (ES6) syntax (ex: `const`)
     "moz"           : false,     // true: Allow Mozilla specific syntax (extends and overrides esnext features)
                                  // (ex: `for each`, multiple try/catch, function expression…)
     "evil"          : false,     // true: Tolerate use of `eval` and `new Function()`
     "expr"          : false,     // true: Tolerate `ExpressionStatement` as Programs
     "funcscope"     : false,     // true: Tolerate defining variables inside control statements
-    "globalstrict"  : true,     // true: Allow global "use strict" (also enables 'strict')
+    "globalstrict"  : false,     // true: Allow global "use strict" (also enables 'strict')
     "iterator"      : false,     // true: Tolerate using the `__iterator__` property
     "lastsemic"     : false,     // true: Tolerate omitting a semicolon for the last statement of a 1-line block
     "laxbreak"      : false,     // true: Tolerate possibly unsafe line breakings
@@ -63,13 +60,13 @@
     "validthis"     : false,     // true: Tolerate using this in a non-constructor function
 
     // Environments
-    "browser"       : false,     // Web Browser (window, document, etc)
-    "browserify"    : false,    // Browserify (node.js code in the browser)
+    "browser"       : true,     // Web Browser (window, document, etc)
+    "browserify"    : true,    // Browserify (node.js code in the browser)
     "couch"         : false,    // CouchDB
     "devel"         : false,     // Development/debugging (alert, confirm, etc)
     "dojo"          : false,    // Dojo Toolkit
     "jasmine"       : true,    // Jasmine
-    "jquery"        : false,    // jQuery
+    "jquery"        : true,    // jQuery
     "mocha"         : false,     // Mocha
     "mootools"      : false,    // MooTools
     "node"          : true,    // Node.js
@@ -84,11 +81,16 @@
 
     // Custom Globals
     "globals": {
-        "jQuery": true,
+        "$": true,
+        "_": false,
         "angular": true,
-        "inject": true
-    },
-    "predef": [
-        "-Promise"
-    ]
+        "d3": true,
+        "inject": true,
+        "L": true,
+        "moment": true,
+        "Q": true
+    }//,
+    //"predef": [
+      //  "-Promise"
+    //]
 }
