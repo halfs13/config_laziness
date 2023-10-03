@@ -6,3 +6,5 @@ export PS1="#\#-\t-\h-\W\$"
 
 alias ls="ls --color=auto"
 alias ll="ls -al'
+
+export EDITOR=vim
